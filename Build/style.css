@@ -12,6 +12,7 @@
     background-color:rgb(19, 19, 20);
     margin: 0;
   }
+  
   .row::after {
     content: "";
     clear: both;
@@ -61,6 +62,8 @@
   .selected{
         background-color: rgb(155, 9, 77)
   }
+  
+  
   main{
 	border-radius: 5px;
 	background-color: #EF5350;
@@ -151,7 +154,8 @@ button:focus {
     outline: none;
 }
 
-.winner   { background-color: #EF5350  !important;
+.winner { 
+    background-color: #EF5350  !important;
     color: white !important;
 }
 
