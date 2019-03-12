@@ -1,0 +1,205 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+  
+  
+  body{
+    background-color:rgb(19, 19, 20);
+    margin: 0;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  P{
+      color: white;
+      padding-left: 15px;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  .col-3 {width: 25%;}
+  .col-9 {width: 75%;}
+
+  
+  .header {
+    background-color: #EF5350;
+    color: #ffffff;
+    padding: 15px;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+    text-transform: uppercase;
+  }
+  
+  .menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #ffffff;
+    color: black;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .menu li:hover {
+    background-color: #0099cc;
+  }
+
+  .selected{
+        background-color: rgb(155, 9, 77)
+  }
+  main{
+	border-radius: 5px;
+	background-color: #EF5350;
+    margin-top: 10px;
+    margin-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px  ;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-left: calc((100% - 580px) / 2); 
+    width: 550px;
+}
+
+#status{
+	margin-bottom: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #FFFFFF;
+	color:  #37474F;
+	font-size: 25px;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.grid-wraper{
+    display: grid;
+    grid-template-columns: repeat(3, 12px);
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 9px;
+    grid-column-gap: 20%;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAFAFA; 
+    align-items: center;
+
+}
+
+#slot1, #slot2, #slot3 {
+	background-position: center;
+	background-size: cover;
+	width: 100px;
+    height: 100px; 
+    
+}
+
+.s1{
+    background-image: url("Reel/Cherry.png");
+}
+
+.s2{
+    background-image: url("Reel/2xBAR.png");
+}
+
+.s3{
+    background-image: url("Reel/3xBAR.png");
+}
+
+.s4{
+    background-image: url("Reel/7.png");
+}
+
+.s5{
+    background-image: url("Reel/BAR.png");
+}
+
+button{
+    border-radius: 15px;
+    border: none;
+    background: #f44b42;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    align-self: center;
+    margin: 1%;
+    width: 10%;
+    text-align: center;
+}
+
+button:hover{
+    background:  rgb(155, 9, 77);
+}
+
+button:focus {
+    outline: none;
+}
+
+.winner   { background-color: #EF5350  !important;
+    color: white !important;
+}
+
+.spin{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    letter-spacing: 10px;
+    text-align: center;
+    background: red;
+    font-size: 18px; 
+    font-weight: 700;
+    border-style: double;
+    border-width: 5px;
+    margin: 1%;
+
+}
+
+.bar{
+    display: inline - grid;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 15px;   
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+   
+
+}
+
+.spinBalance{
+    top: 520px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Lato', serif;
+    text-align: center;
+    padding: 10px;
+    width: 160px;
+    text-transform: uppercase;
+}
+
+.spinBalance:focus {
+    outline: none;
+}
+
+  
+
+.holder{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Slot Machine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+<body>
+     <div class="header">
+        <h1>Slot Machine Simulation Web App</h1>
+     </div>
+              
+     <div class="row">
+     <div class="col-3 menu">
+        <p> SCORE BOARD </p>
+        <ul>
+         <li id="l1">CHERRY Combination</li>
+         <li id="l2">2xBAR Combination</li>
+         <li id="l3">3xBAR Combination</li>
+         <li id="l4">7 Combination </li>
+         <li id="l5">BAR Combination </li>
+         <li id="l6">Different Combination </li>
+        </ul>
+     </div>
+              
+                <div class="col-9">
+        
+                  <main>
+                        <section id="status">WELCOME!</section>
+                        <div class="grid-wraper">
+                            <div id="slot1" class="s1"></div>
+                            <div id="slot2" class="s1"></div> 
+                            <div id="slot3" class="s1"></div>
+                            <!-- <div id="slot" class="s1"></div>
+                            <div id="slot" class="s1"></div>
+                            <div id="slot" class="s1"></div>
+                            <div id="slot" class="s1"></div>
+                            <div id="slot" class="s1"></div>
+                            <div id="slot" class="s1"></div> -->
+                        </div>  
+                    </main>
+
+                    <div class="bar">
+                            <button id="ran">Random Slot</button>
+                            <button class="spin"> SPIN</button>
+                            <button id="fixed">Fixed Slot</button>
+                    </div>
+                        
+                        <div class="holder">
+                            <input type="text" placeholder="Balance Spin" class="spinBalance ">
+                        </div>
+                       
+                </div>
+              </div>
+
+              <script src="script.js"></script>
+</body>
+</html>
